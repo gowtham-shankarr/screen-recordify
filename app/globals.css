@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #000;
+  overflow: hidden;
+}
+
+.btn-violet {
+  color: #fff;
+  font-size: 14px;
+  background: #9433ef;
+  padding: 15px 40px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  animation-timing-function: cubic-bezier(0.37, 2, 0.42, 1.02);
+  animation-delay: 0.7s;
+  animation-name: crxZGW;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  will-change: transform, opacity;
+}
+
+.hero-section {
+  height: 80vh;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.description {
+  font-size: 26px;
+  color: #83888b;
+    font-weight: 449;
+    line-height: 1.5em;
+    max-width: 750px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation-timing-function: cubic-bezier(0.37, 2, 0.42, 1.02);
+    animation-delay: 1s;
+    animation-name: crxZGW;
+    animation-fill-mode: both;
+    animation-duration: 2.5s;
+    will-change: transform, opacity;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-bg {
+  background: #0a0a0a;
+    border: 1px solid #252525;
+}
+
+.card-bg:hover {
+  border: 1px solid #fff;
+}
+.editor-header {
+  height: 62px;
+  background: #080B10;
+  border-bottom: 1px solid #24252E;
+}
+
+.editor-sidebar {
+  width: 400px;
+  background: #171921;
+  border-left: 1px solid #24252E;
+}
+
+.editor-main {
+  background: #0D1117;
+}
+
+.editor-right-blocks {
+  border-bottom: 1px solid #3e3f4b;
+  padding-bottom: 20px;
+}
+
+.canvas-size {
+  width: 100%;
+  height: 100%;
+}
+
+.export-btn {
+  background: #0073F5;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.canvas-container {
+  height: 60vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
