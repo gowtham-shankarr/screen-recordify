@@ -127,6 +127,19 @@ h1 {
   height: 60vh;
 }
 
+.video-render-screen {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.player-controls {
+  position: absolute;
+    bottom: -50px;
+    text-align: center;
+    width: 100%;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
